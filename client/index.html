@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meditative Drift</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+
+  <div id="splash">
+    <h1>Meditative Drift</h1>
+    <p>Tap anywhere to begin</p>
+  </div>
+
+  <canvas id="three-canvas"></canvas>
+
+  <div id="page-title">Meditative Drift</div>
+
+  <div id="labels"></div>
+
+  <button id="panel-toggle" aria-label="Toggle controls">☰</button>
+
+  <div id="panel">
+    <div class="panel-section">
+      <div class="section-label">Mood</div>
+      <div id="mood-pills" class="pills"></div>
+    </div>
+    <div class="panel-section">
+      <div class="section-label">Instrument</div>
+      <div id="instrument-pills" class="pills"></div>
+    </div>
+    <div class="panel-section">
+      <div class="section-label">Speed: <span id="ball-speed-display">1.0x</span></div>
+      <input type="range" id="ball-speed" min="0" max="4" step="0.1" value="1" />
+    </div>
+    <div class="panel-section">
+      <div class="section-label">Balls: <span id="ball-count-display">8</span></div>
+      <input type="range" id="ball-count" min="3" max="12" value="8" />
+    </div>
+    <div class="panel-section">
+      <div class="section-label">Note Length: <span id="note-duration-display">3.0s</span></div>
+      <input type="range" id="note-duration" min="0.5" max="6" step="0.5" value="3" />
+    </div>
+    <div class="panel-section">
+      <label class="toggle-label">
+        <input type="checkbox" id="show-notes" />
+        Show note labels
+      </label>
+    </div>
+    <div class="panel-section">
+      <div class="section-label">Agent Play</div>
+      <label class="toggle-label">
+        <input type="checkbox" id="agent-enabled" />
+        Auto-play melodies
+      </label>
+      <div style="margin-top: 10px;">
+        <div class="section-label">Tempo: <span id="agent-tempo-display">0.7×</span></div>
+        <input type="range" id="agent-tempo" min="0.3" max="2.0" step="0.1" value="0.7" />
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
