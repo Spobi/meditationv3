@@ -20,5 +20,5 @@ export const INSTRUMENTS = {
   hangDrum:     { label: 'Hang Drum' },
 };
 
-export const BOUNDS = { x: 7, y: [0.8, 5.5], z: 5 };
+export const BOUNDS = { x: 7, y: [-2.5, 7.5], z: 5 };
 export const BALL_RADIUS = 0.99; // 0.6 × 1.65

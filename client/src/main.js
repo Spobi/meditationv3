@@ -108,7 +108,7 @@ async function initScene() {
 function applyBackground(moodKey) {
   const mood = MOODS[moodKey];
   scene.background = new THREE.Color(mood.bgColor);
-  scene.fog = new THREE.FogExp2(mood.fogColor, 0.035);
+  scene.fog = new THREE.FogExp2(mood.fogColor, 0.018);
 }
 
 // ─── Animation loop ───────────────────────────────────────────────────────────

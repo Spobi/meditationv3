@@ -28,7 +28,7 @@ function getInitialPositions(count) {
     const row = Math.floor(i / cols);
     positions.push(new THREE.Vector3(
       (col / (cols - 1 || 1)) * 10 - 5,
-      2 + Math.random() * 2,
+      -1 + Math.random() * 6,
       0  // all in the same plane for frequent collisions
     ));
   }
